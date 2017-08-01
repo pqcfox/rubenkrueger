@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    background-image: url("https://static.pexels.com/photos/4827/nature-forest-trees-fog.jpeg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+}
+
+
+#top-text-left{
+    color: #848484;
+    font-weight: bold;
+    font-size: 18px;
+    display: none;
+}
+
+.top-text-right{
+    color: #848484;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 20px;
+    display: none;
+}
+
+#welcome{
+    margin-top: 40%;
+    color: white;
+    font-size: 60px;
+    display: none;
+}
+
+#welcome-2{
+    color: white;
+    font-size: 30px;
+    display: none;
+}
