@@ -25,9 +25,99 @@
 </header>
 <div class="container">
     <div class="blog">
-    <h1>How to Make Your First Website</h1>
+    <h1>How to Make Your First Website From Scratch</h1>
         <div class="jumbotron">
-        
+            &emsp;&emsp;&emsp;<p class="text-justify">Websites are made of HTML, CSS, and JavaScript files which browsers convert into understandable information. Hyper Text Markup Language (HTML) provides the content and structure of a webpage (all of the text and images and their order), Cascading Style Sheets (CSS) adds style (font colors, backgrounds, and how everything fits together) and JavaScript adds behavior (the ability to fade in text, allow the user to change content, and even make games). By the end of this tutorial, you will have made a simple website for free. And unlike those who use sites such as Wix for web development, you will understand how websites work.</p>
+
+            <h3 class="text-left">Step 1. Get Brackets, a text editor</h3>
+            <p class="text-justify">To make a website, you need to code. No way around it. (Unless, of course, you use Wix, but that's lame.) Fortunately, the learning curve for web development is sharp, and there are copious amounts of help online (including, of course, this tutorial). My personal go-to&rsquo;s are Stack Overflow, a Q&amp;A forum of millions of professional programmers, and w3 schools, an awesome web development resource. I had less than a month of web development experience when I made this website.</p>
+
+            <p class="text-justify">I personally use WebStorm by JetBrains, but without a free student subscription this would cost over a hundred dollars per year. So for your website, we will use Brackets, a free text editor. To get started, go to <a href="http://brackets.io">http://brackets.io</a> and download the program.
+
+            <h3>Step 2. Create a HTML file named &ldquo;index.html&rdquo;</h3>
+            When you first open Brackets, you will be presented with an example project, which just so happens to be their own homepage. Ignore this for now.
+
+            Instead, look to the grey panel on the left. Under &ldquo;Getting Started,&rdquo; right-click and select &ldquo;New Folder.&rdquo;  Name this folder &ldquo;myfirstwebsite.&rdquo; Right click on &ldquo;myfirstwebsite&rdquo; and select &ldquo;New File.&rdquo; Name this &ldquo;index.html.&rdquo; Congrats, you now have an empty HTML file!
+
+            When a browser goes to a website, it will first look for a file called &ldquo;index.html.&rdquo; This is the &ldquo;home page&rdquo; of a website, and it is the standard practice to name it this way.
+
+            Step 3. Edit &ldquo;index.html&rdquo;
+            Add &lt;code&gt;&lt;!DOCTYPE html&gt;&lt;/code&gt; to the top of the page. This needs to be on the HTML page, and simply tells the browser that the following HTML file will be in the HTML 5 format, the most recent version of HTML.
+
+            Copy and paste &lt;code&gt;&lt;!DOCTYPE html&gt;&lt;/code&gt; into the top of the page.
+
+            Step 4. Learn some fundamentals
+            For a browser to properly display a website, there a number of &ldquo;tags&rdquo; (special words enclosed in angle brackets such as &lt;code&gt;&lt;h1&gt;&lt;/code&gt; and &lt;code&gt;&lt;body&gt;&lt;/code&gt;) which need to be present. All of the website&rsquo;s content will be enclosed in tags, and the specific tag will determine the effect. For example, the &lt;code&gt;&lt;strong&gt;&lt;/code&gt; tag in &lt;code&gt;&lt;strong&gt;Bold Text&lt;/strong&gt;&lt;/code&gt; will cause &ldquo;Bold Text&rdquo; to be in bold.
+
+            Notice the pattern: an opening tag, the content, and the closing tag, albeit with a &ldquo;/&rdquo;. All opening tags must have a matching closing tag, or else the website will not look as intended. (However, there are some tags which are self-closing, which we will return to later.)
+
+            This is the central concept of HTML, and once you understand this, mastering HTML will be learning the roughly twenty tags.
+
+            Step 5. Add &lt;code&gt;&lt;html&gt;, &lt;head&gt;, and &lt;title&gt;&lt;/code&gt; tags
+            The next item you will add will be &lt;code&gt;&lt;html&gt;&lt;/code&gt;. This tag will enclose the entire HTML document, and tells the browser that the information in between the tags is HTML code.
+
+            Did you see what happened? After you typed &lt;code&gt;&lt;html&gt;&lt;/code&gt;, Brackets automatically created the closing tag. This is a nice feature, and will help prevent errors.
+
+            Now, in between the two &lt;code&gt;&lt;html&gt;&lt;/code&gt; tags, add the &lt;code&gt;&lt;head&gt;&lt;/code&gt; tag. The content in the &lt;code&gt;&lt;head&gt;&lt;/code&gt; tag will not actually be displayed on the webpage, but is important nonetheless, as it contains other data, such as the name of the website.
+
+            Inside of the &lt;code&gt;&lt;head&gt;&lt;/code&gt; tags, add &lt;code&gt;&lt;title&gt;&lt;/code&gt;, and inside of the title tags, add &ldquo;Dehydrated Water Inc.&rdquo; Make sure that the title tag is indented. This will make your code more readable.
+
+            Refer to Figure 1.1. This is what you should have so far.
+
+            Now look at the lightning bolt in the top right corner. When clicked, this will open the current HTML page in your default browser. This is called &ldquo;Live Preview,&rdquo; and will allow us to make changes and see the result. Click on the lightning bolt and see what happens.
+
+            You should see nothing, except that in the tab it says, &ldquo;Dehydrated Water, Inc.&rdquo; This is the purpose of the title tag, to display the website&rsquo;s name.
+
+            Step 6. Add to the document body
+            Now, go below the head tag (but still inside of the &lt;code&gt;&lt;html&gt;&lt;/code&gt; tags), and add the &lt;code&gt;&lt;body&gt;&lt;/code&gt; tag. Everything inside of the body tag will be visible on the webpage.
+
+            For the first tag inside of the document body, add the &lt;code&gt;&lt;div&gt;&lt;/code&gt; tag. This creates a new section within the document, and we will add content in here which we want to be together. (The div tag does a few other things, such as allow us style all of the elements within it, which I will discuss later.) Press enter a few times to create empty lines between the div tags.
+
+            Between the div tags, add a &lt;code&gt;&lt;h1&gt;&lt;/code&gt;, and inside of the &lt;code&gt;&lt;h1&gt;&lt;/code&gt;, type &ldquo;Dehydrated Water, Inc.&rdquo; H1 stands for &ldquo;header 1,&rdquo; and makes the text bold and larger than usual (the default is 12pt). There are five other headers, running up to H6, and each decrease in font size.
+
+            Now click on the lightning bolt. You should see &ldquo;Dehydrated Water, Inc&rdquo; at the top of the page. If you don&rsquo;t, refer to Part 1 Recap for what your code should look like.
+
+            Part 1 Recap:
+
+            &lt;/part1&gt;
+
+
+            &lt;part 2&gt;
+            Step 7. Add an unordered list
+
+            We will now use an unordered list to create a navigation bar. An unordered list (as opposed to an ordered list, which would be numbered) consists of an opening &lt;ul&gt;, and a series of &lt;li&gt;&lt;/li&gt; tags. The list items (hence &ldquo;li&rdquo;) will go inside of the &lt;li&gt; tags.
+
+            For your website, add an unordered list after your &ldquo;Dehydrated Water, Inc.&rdquo; header. Between the &lt;ul&gt; tags, add three &lt;li&gt; tags, and put in &ldquo;Home,&rdquo; &ldquo;Products,&rdquo; and &ldquo;Contact Us&rdquo; inside.
+
+            Now use Live Preview. Your website should match Figure 2.1. If not, check out the code in Figure 2.2.
+
+            Step 8. Create a stylesheet
+
+            This is great, but it is not very aesthetically appeasing. To change the default ul styling (or any other HTML element) we need to use Cascading Style Sheets.
+
+            Now this is where we create an external stylesheet. Create a new file called &ldquo;main.css&rdquo; in the same folder as your &ldquo;index.html.&rdquo;
+
+            At the top of the document, under the title tags but still inside of the head section, add the following: &lt;link rel= &ldquo;stylesheet&rdquo; type= &ldquo;text/css&rdquo; href= &ldquo;main.css&rdquo;/&gt; . The rel= &ldquo;stylesheet&rdquo; and type= &ldquo;text/css&rdquo; means that the link is referring to a stylesheet, and href= &ldquo;main.css&rdquo; tells the browser to look for the stylesheet in a file called &ldquo;main.css.&rdquo; The &lt;link/&gt; tag is one of those self-closing tags that I mentioned earlier.
+
+            Step 9. Learn CSS in 113 seconds
+
+            The syntax of CSS is completely different from HTML: there are no tags, and we do not specify the language type at the top of the document. For CSS, we simply identify the HTML element which we are styling (&ldquo;the selector&rdquo;), and between curly braces, define the values for our intended properties.
+
+            For example, if we do h1{ color: blue;} all h1 content will have a color of blue. Notice the semi-colon after the value blue; if this is not present, it will cause an error.
+
+            To select an HTML element, we can either target the tags which is enclosed in (which is undesirable in most cases, as all other content enclosed in those tags will have that styling), or we can assign it a class in the HTML document and declare the properties in an external style sheet (or we can also give it an &ldquo;id,&rdquo; which is essentially the same thing as a class, but it can only be used once per document).
+
+            Step 10. Start using CSS
+
+            Navigate to main.css, and type the following:
+            ul{
+            display: inline;
+            list-style: none;
+            }
+
+            The &ldquo;ul&rdquo; means we are selecting all of the unordered lists on the document (which is fine for now), &ldquo;list-style: none;&rdquo; will cause the bullet points to disappear, and &ldquo;display: inline&rdquo; will make the list horizontal.
+
+            &lt;/part 2&gt;
         </div>
     </div>
 </div>
